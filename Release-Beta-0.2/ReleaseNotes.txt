@@ -48,8 +48,7 @@ Deviations from 'Simula Standard'
 The current version of this SIMULA system differs from the Simula Standard in some areas.
 Following the chapters of  Simula Standard, this is a complete list:
 
-4   Virtual labels are not fully implemented. In certain rare cases goto such
-    labels may result in Runtime errors.
+5   Virtual labels and switches are not part of this implementation.
 
 6   External non-SIMULA procedures are NOT IMPLEMENTED.
 
