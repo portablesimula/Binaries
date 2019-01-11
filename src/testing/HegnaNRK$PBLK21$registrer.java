@@ -1,6 +1,6 @@
 // JavaLine 1 ==> SourceLine 522
 package simprog;
-// Release-Beta-0.3 Compiled at Wed Jan 09 21:20:35 CET 2019
+// Simula-Beta-0.3 Compiled at Fri Jan 11 09:42:46 CET 2019
 import simula.runtime.*;
 @SuppressWarnings("unchecked")
 public final class HegnaNRK$PBLK21$registrer extends BASICIO$ {
