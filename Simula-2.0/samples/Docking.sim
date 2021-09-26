@@ -209,7 +209,7 @@ begin
       integer hi; 
  
       !****************************************; 
-      !*** Warehouse Statement Code follows ***; 
+      !*** Warehouse Statement Code follows ***;
       !****************************************; 
   
       drawMap(nDocks); 
