@@ -8,7 +8,7 @@ Drawing("Simulating Pandemic Development",900,900) begin
 -- 
 -- Written by �ystein Myhre Andersen, 2021. 
 -- 
-SIMULATION begin 
+Simulation begin 
    real population=140; 
    real incubation=3; 
    integer length=50; 
@@ -23,7 +23,7 @@ SIMULATION begin
    integer nInfected,nSick; 
  
    Process class SickPerson; 
-   begin integer day; Boolean symptoms; real contacts; ref(Head) environment;   
+   begin integer day; boolean symptoms; real contacts; ref(Head) environment;   
  
       procedure treatment; begin 
          ref(Link) X; 
@@ -70,14 +70,14 @@ SIMULATION begin
       end 
    end; 
     
-   class Description(x,y,color,txt); long real x,y; integer color; Text txt; begin 
+   class Description(x,y,color,txt); long real x,y; integer color; text txt; begin 
          setFillColor(color); fillRectangle(x, y, 50, 10); 
          setDrawColor(black); setFontSize(24); drawText(txt,x+70,y+11); 
    end; 
     
    class Curve(color); value color; integer color; begin 
       long real x,y,nextX,nextY; 
-      Procedure move(nxt); value nxt; long real nxt; begin 
+      procedure move(nxt); value nxt; long real nxt; begin 
          nextX := x+20; nextY := 900-10-(nxt*5); 
          setDrawColor(color); drawLine(x,y,nextX,nextY); 
          x:=nextX; y:=nextY; 
